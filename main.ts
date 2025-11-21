@@ -12,7 +12,7 @@ const heatedSeats: string = prompt("Heated seats?") || "no";
 const warranty: string = prompt("5-year extended warranty?") || "no";
 
 // Output
-var totalCost: number = 25000;
+let totalCost: number = 25000;
 console.log("Base price: $25,000");
 if (floorMat == "yes") {
   totalCost += 500;
@@ -31,7 +31,7 @@ if (warranty == "yes") {
   console.log("5-year extended warranty: $2,500");
 }
 
-var tax = totalCost * 0.13;
+let tax = totalCost * 0.13;
 console.log(`Tax: $${tax}`);
 totalCost += tax;
 
