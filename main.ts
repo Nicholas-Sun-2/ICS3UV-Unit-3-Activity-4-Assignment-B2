@@ -31,7 +31,7 @@ if (warranty == "yes") {
   console.log("5-year extended warranty: $2,500");
 }
 
-let tax = totalCost * 0.13;
+const tax = totalCost * 0.13;
 console.log(`Tax: $${tax}`);
 totalCost += tax;
 
